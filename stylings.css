@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#mainpage{
+    height: 100vh;
+    /* border: 3px black solid; */
+    background-color: #330601;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#main_section_icon{
+    height: 5vh;
+    /* border: 2px black solid; */
+    font-size: 25px;
+    color: #f0f8f5;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+#icon_card{
+    display: none;
+  position: absolute; /* or fixed */
+  top: 60px; /* adjust based on your icon */
+  right: 20px; /* or left */
+  height: 150px;
+  width: 200px;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 1000; /* ensures it stays on top */
+}
+
+#icon_card>a{
+      font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: none;
+    color: #330601;
+}
+
+#main_section_1{
+    height: 75vh;
+    /* border: 2px black solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main_section_2{
+    height: 20vh;
+    /* border: 2px black solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    color: #f0f8f5;
+
+}
+
+#main_section_2>h1{
+    font-size: 35px;
+}
+#main_section_2>p{
+    font-size: 20px;
+}
+
+/* # about me page */
+
+
+#aboutpage{
+    display: flex;
+}
+
+#leftside{
+    width: 50vw;
+    height: 100vh;
+    background-color: #8b372d;
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+    padding-left: 60px;
+    color: #f0f8f5;
+}
+
+#leftside>h1{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+     font-weight: 600;
+     font-style: normal;
+     font-size: 60px;
+     height: 50vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: underline;
+}
+
+#leftside>p{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    height: 50vh;
+     display: flex;
+     padding-bottom: 300px;
+}
+
+#rightside{
+    width: 50vw;
+    height: 100vh;
+    color: #8b372d;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+}
+
+#rightside>div{
+    height: 30vh;
+    padding-top: 50px;
+}
+
+#rightside>hr{
+    border-top: 3px #8b372d solid;
+}
+
+/* # projects */
+
+#projects_page{
+    background-color: #a75a4a;
+}
+
+#projects_title{
+    height: 10vh;
+    /* border: 2px black solid; */
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    /* align-items: center; */
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+     font-weight: 600;
+     font-style: normal;
+     font-size: 30px;
+     color:#f0f8f5;
+}
+
+#cards_container{
+    height: 90vh;
+    /* border: 2px black solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+#card1,#card2,#card3{
+    height: 450px;
+    width: 370px;
+    /* border: 2px black solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    border-radius: 20px;
+}
+
+#card1,#card3{
+    background-color: #cfa899;
+    color: #330601;
+}
+
+#card2{
+    background-color: #5d241d;
+    color: #f0f8f5;
+}
+
+#card1>img,#card2>img,#card3>img{
+    border-radius: 20px;
+}
+
+#card1>h1,#card2>h1,#card3>h1{
+     font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+     display: flex;
+}
+
+#card1:hover,#card2:hover,#card3:hover{
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+/* #contact page */
+
+#contact_page{
+    display: flex;
+}
+
+#contact_section_1{
+    height: 100vh;
+    width: 50vw;
+    /* border: 3px black solid; */
+    background-color: #f0f8f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contact_section_1>aside{
+    height: 20vh;
+    width: 35vw;
+    /* border: 3px black solid; */
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content:; */
+    align-items: center;
+    padding-left: 50px;
+    background-color: #8b372d;
+    color: #f0f8f5;
+    border-radius: 20px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 10px;
+    /* gap: 10px; */
+}
+
+#contact_section_1>aside>i{
+    font-size: 30px;
+    padding-right: 70px;
+}
+
+#contact_section_1>aside:hover{
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+#contact_section_2{
+    height: 100vh;
+    width: 50vw;
+    /* border: 3px black solid; */
+    background-color: #8b372d;
+    color: #f0f8f5;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#contact_section_2>h1{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+     font-weight: 600;
+     font-style: normal;
+     font-size: 50px;
+     text-decoration: underline;
+}
+
+#contact_section_2>p{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+}

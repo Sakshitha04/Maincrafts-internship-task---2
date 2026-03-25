@@ -27,16 +27,16 @@
 
 #icon_card{
     display: none;
-  position: absolute; /* or fixed */
-  top: 60px; /* adjust based on your icon */
-  right: 20px; /* or left */
+  position: absolute; 
+  top: 60px; 
+  right: 20px; 
   height: 150px;
   width: 200px;
   padding: 15px;
   background: white;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  z-index: 1000; /* ensures it stays on top */
+  z-index: 1000; 
 }
 
 #icon_card>a{
